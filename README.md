@@ -2,7 +2,7 @@
 基于Netty的即时通讯系统
 
 ## 知识点目录
-[ByteBuf简述]()
+[ByteBuf简述](https://github.com/DanielCorleone2001/Netty_IM/blob/main/ByteBuf.md)
 ## Commit历史变更
 ### NettyServer启动类
 
