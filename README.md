@@ -1,6 +1,8 @@
 # Netty_IM
 基于Netty的即时通讯系统
 
+## 知识点目录
+[ByteBuf简述]()
 ## Commit历史变更
 ### NettyServer启动类
 
