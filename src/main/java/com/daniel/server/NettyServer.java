@@ -1,5 +1,6 @@
 package com.daniel.server;
 
+import com.daniel.server.handler.FirstServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
@@ -37,6 +38,7 @@ public class NettyServer {
                         .childHandler(new ChannelInitializer<NioSocketChannel>() {//定义后续每条连接的数据读写，业务处理逻辑
                             protected void initChannel(NioSocketChannel nioSocketChannel) {
                                 // TODO: 添加具体的处理逻辑
+                                nioSocketChannel.pipeline().addLast(new FirstServerHandler()); // 简单的打印出读到的消息
                             }
                         });
         bindPort(serverBootstrap, port); // 寻找合适的server端口进行绑定
