@@ -14,11 +14,11 @@
 ### Client与Server的双向简单通信
 ![架构](https://tva4.sinaimg.cn/large/0085EwgIgy1gsddc4z6naj30qe0pomzo.jpg)
 
-server:
+Server:
 
 ![server收到消息](https://tva1.sinaimg.cn/large/0085EwgIgy1gsddd6n52cj30fs03ujrk.jpg)
 
-client:
+Client:
 
 ![client收到消息](https://tva2.sinaimg.cn/large/0085EwgIgy1gsdddsqj5ej30hf04gmxe.jpg)
 
@@ -33,3 +33,11 @@ client:
 
 编码与解码不过多赘述。
 >解码器需要获取指令和序列化方式的处理逻辑，所以用两个HashMap存了"指令-具体的实现逻辑类"和"序列化算法-序列化实现类"的键值对。
+
+### 客户端登录
+![image](https://tva3.sinaimg.cn/large/0085EwgIgy1gsellnnw07j30n80rp405.jpg)
+server:
+>![image](https://tvax2.sinaimg.cn/large/0085EwgIgy1gselm0i7q7j30bu040t8t.jpg)
+
+client：
+>![image](https://tvax2.sinaimg.cn/large/0085EwgIgy1gselm8pctuj30ef02bq2y.jpg)
