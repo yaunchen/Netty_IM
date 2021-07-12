@@ -15,3 +15,15 @@
 ![架构](https://tva4.sinaimg.cn/large/0085EwgIgy1gsddc4z6naj30qe0pomzo.jpg)
 ![server收到消息](https://tva1.sinaimg.cn/large/0085EwgIgy1gsddd6n52cj30fs03ujrk.jpg)
 ![client收到消息](https://tva2.sinaimg.cn/large/0085EwgIgy1gsdddsqj5ej30hf04gmxe.jpg)
+
+### Client和Server的通信协议
+>定义了通信协议, 以及编码器，解码器。
+
+协议：
+> ![image](https://tvax1.sinaimg.cn/large/0085EwgIgy1gsejzdr8v2j30yg053q4i.jpg)
+
+传输消息架构：
+>![image](https://tvax4.sinaimg.cn/large/0085EwgIgy1gsek64rfxzj30io0h80tp.jpg)
+
+编码与解码不过多赘述。
+>解码器需要获取指令和序列化方式的处理逻辑，所以用两个HashMap存了"指令-具体的实现逻辑类"和"序列化算法-序列化实现类"的键值对。
